@@ -139,3 +139,17 @@ x*= 5;
  // to read 00000100
  // to red / write 00000110
  //read write execute 00000111
+
+ //if else 
+
+ let hour = 10;
+
+ if(hour >= 6 && hour < 12){
+    console.log('Good morining');
+ }
+ else if (hour >=12 && hour < 6){
+    console.log('Good Afternoon');
+ }
+ else{
+    console.log('Good Evening');
+ }
