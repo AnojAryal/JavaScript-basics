@@ -153,3 +153,20 @@ x*= 5;
  else{
     console.log('Good Evening');
  }
+
+ //switch case
+ let role;
+
+ switch (role){
+    case 'guest':
+        console.log('Guest User');
+        break; 
+
+    case (moderator):
+        console.log('Moderator');
+        break;
+
+    default:
+        console.log('Unknown User')
+
+ }
