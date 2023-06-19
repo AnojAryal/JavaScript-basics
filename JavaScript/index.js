@@ -175,3 +175,10 @@ x*= 5;
  for (let i=0 ;i<5; i++){
     console.log('Hello World');
  }
+
+ //while
+ let a=0;
+ while(a<=5){
+    if(a%2!==0)console.log(a);
+    a++
+ }
