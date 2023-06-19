@@ -155,21 +155,21 @@ x*= 5;
  }
 
  //switch case
- let role;
+ let role = 'guest'; 
 
- switch (role){
-    case 'guest':
-        console.log('Guest User');
-        break; 
-
-    case (moderator):
-        console.log('Moderator');
-        break;
-
-    default:
-        console.log('Unknown User')
-
+ switch (role) {
+   case 'guest':
+     console.log('Guest User');
+     break;
+ 
+   case 'moderator':
+     console.log('Moderator');
+     break;
+ 
+   default:
+     console.log('Unknown User');
  }
+ 
 
  //for
  for (let i=0 ;i<5; i++){
@@ -190,3 +190,13 @@ x*= 5;
     if(i%2!==0)console.log(i);
     i++
  }while(i<=5)
+
+ //for in
+ const man = {
+    name: 'Anoj',
+    age: 20
+  };
+  
+  for (let key in man) {
+    console.log(key, man[key]);
+  }
