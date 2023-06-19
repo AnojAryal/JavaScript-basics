@@ -200,3 +200,9 @@ x*= 5;
   for (let key in man) {
     console.log(key, man[key]);
   }
+
+  //for of 
+  const animals =['Tiger','Lion','Dog']
+
+  for (let animal of animals)
+    console.log(animal);
