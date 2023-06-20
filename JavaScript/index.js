@@ -206,3 +206,16 @@ x*= 5;
 
   for (let animal of animals)
     console.log(animal);
+
+ //break and continue
+ let k = 0;
+ while (k<=10){
+   // if(k===5) break;
+
+   if(k%2===0){
+      i++;
+      continue
+   }
+   console.log(k);
+   k++;
+ }
