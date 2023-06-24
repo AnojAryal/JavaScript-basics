@@ -219,3 +219,13 @@ x*= 5;
    console.log(k);
    k++;
  }
+
+//exercise
+
+//max of 2 numbers 
+function max(a,b ){
+   return(a> b)?a: b;
+}
+
+let num = max(5,10)
+console.log(num);
