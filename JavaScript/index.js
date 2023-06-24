@@ -213,7 +213,7 @@ x*= 5;
    // if(k===5) break;
 
    if(k%2===0){
-      i++;
+      k++;
       continue
    }
    console.log(k);
@@ -223,9 +223,16 @@ x*= 5;
 //exercise
 
 //max of 2 numbers 
+let num = max(5,10)
+console.log(num);
+
 function max(a,b ){
    return(a> b)?a: b;
 }
 
-let num = max(5,10)
-console.log(num);
+//landscape or potrait
+console.log(isLandscape(800, 600))
+
+function isLandscape(width,height){
+   return(width>height)
+}
