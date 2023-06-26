@@ -236,3 +236,18 @@ console.log(isLandscape(800, 600))
 function isLandscape(width,height){
    return(width>height)
 }
+
+//objects
+//OOP
+const circle = {
+   radious : 1,
+   location :{
+      x : 1,
+      y : 1
+   },
+   isVisible : true,
+   draw : function() { //method
+      console.log('draw');
+   }
+}
+circle.draw();
