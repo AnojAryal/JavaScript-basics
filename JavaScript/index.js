@@ -251,3 +251,19 @@ const circle = {
    }
 }
 circle.draw();
+
+//factory functions
+function createCircle(radious){
+   return {
+      radious,
+      pin(){
+         console.log('pin');
+      }  
+   }
+}
+
+const circle1 = createCircle(2);
+console.log(circle1);
+
+const circle2 = createCircle(3);
+console.log(circle2);
