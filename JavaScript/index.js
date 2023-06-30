@@ -267,3 +267,20 @@ console.log(circle1);
 
 const circle2 = createCircle(3);
 console.log(circle2);
+
+//constructor functons
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Creating new objects using the Person constructor
+var person1 = new Person("John", 25);
+var person2 = new Person("Jane", 30);
+
+// Accessing properties of the created objects
+console.log(person1.name); 
+console.log(person1.age); 
+
+console.log(person2.name);
+console.log(person2.age);
