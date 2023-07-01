@@ -284,3 +284,13 @@ console.log(person1.age);
 
 console.log(person2.name);
 console.log(person2.age);
+
+//constructor function
+function CircleRad(radious){
+   this.radious = radious
+   this.draw = function(){
+      console.log('draw');
+   }     
+}
+const circleRad= new CircleRad(1);
+console.log(circleRad);
