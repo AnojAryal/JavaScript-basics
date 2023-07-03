@@ -294,3 +294,24 @@ function CircleRad(radious){
 }
 const circleRad= new CircleRad(1);
 console.log(circleRad);
+
+
+//value vs Refrence type
+let xs = {value : 20}
+let yx = xs 
+
+
+xs.value = 30;
+
+console.log(yx);
+
+//primitive are copied by their values
+//objects are copied mby their refrence
+let obj = {val : 10}
+
+function increase (obj){
+   obj.val ++;
+}
+
+increase(obj)
+console.log(obj);
