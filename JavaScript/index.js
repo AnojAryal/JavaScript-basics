@@ -315,3 +315,25 @@ function increase (obj){
 
 increase(obj)
 console.log(obj);
+
+//template literal
+const name3 = "John";
+const age3 = 30;
+
+// Basic usage
+const greeting = `Hello, ${name3}!`;
+
+console.log(greeting); 
+
+// Embedded expressions
+const message = `My name is ${name3} and I am ${age3} years old.`;
+
+console.log(message); 
+
+// Multiline strings
+const multiline = `
+  This is a multiline string.
+  It can span across multiple lines
+  without the need for explicit line breaks.`;
+
+console.log(multiline);
