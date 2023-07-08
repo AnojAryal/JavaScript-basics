@@ -337,3 +337,21 @@ const multiline = `
   without the need for explicit line breaks.`;
 
 console.log(multiline);
+
+//cloning an object
+ const circle3 ={
+   radious3 : 1,
+   draw3 (){
+      console.log('draw3');
+   }
+ }
+
+ const another1 = Object.assign({},circle3)
+ //target object that we pass above doesnt have to be an empty string
+ //it cane be existing object and have one or more properties or methods
+
+
+ //or simply we can use spread operator too ---> ...
+ //const amother1 = {...circle};
+
+ console.log(another1);
