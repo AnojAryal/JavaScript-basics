@@ -355,3 +355,27 @@ console.log(multiline);
  //const amother1 = {...circle};
 
  console.log(another1);
+
+ //math
+ 
+ console.log(Math.random());
+ console.log(Math.round(1.9));
+ console.log(Math.max(1,2,3,4,5));
+
+ //string primitive
+ const msg = 'hi';
+ console.log(msg,'is an ',typeof(msg));
+ console.log(msg.length); //there are many more
+
+
+ //string object
+ const ano = new String('hello')
+ console.log('ano is', typeof(ano) );
+
+ //date
+ const now = new Date();
+ const year = now.getFullYear();
+ const month = now.getMonth() + 1; // Adding 1 because months are zero-based
+ const day = now.getDate();
+ 
+ console.log(`${month}/${day}/${year}`);
