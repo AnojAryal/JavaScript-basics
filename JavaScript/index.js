@@ -379,3 +379,18 @@ console.log(multiline);
  const day = now.getDate();
  
  console.log(`${month}/${day}/${year}`);
+
+ //Arrays 
+
+ //Adding elements
+ const arr = [3,4]
+ console.log(arr);
+
+ //end
+ console.log(arr.push(5,6));
+
+ //beginning
+ console.log(arr.unshift(1,2));
+
+ //middle
+ console.log(arr.splice(2,0,'a','b'));
