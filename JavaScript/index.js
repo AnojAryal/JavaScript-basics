@@ -394,3 +394,14 @@ console.log(multiline);
 
  //middle
  console.log(arr.splice(2,0,'a','b'));
+
+ //finding elements
+
+ //primitives
+
+ const arry = [1,2,3,4]
+
+ console.log(arry.indexOf('a'));
+ console.log(arry.indexOf(1));
+
+ console.log(arry.includes(1));
