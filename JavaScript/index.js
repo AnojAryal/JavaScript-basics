@@ -405,3 +405,16 @@ console.log(multiline);
  console.log(arry.indexOf(1));
 
  console.log(arry.includes(1));
+
+ //refrence types
+
+ const courses = [
+   {id :1 , name : 'a'},
+   {id :2 , name : 'b'}
+ ];
+
+ const course =courses.find(function(course){   //predicate or callback function
+   return course.name ==='a'
+ });
+ 
+ console.log(course);
