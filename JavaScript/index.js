@@ -418,3 +418,13 @@ console.log(multiline);
  });
  
  console.log(course);
+
+ //Arrow functions
+ const subjects = [
+   {id :1 , name : 'Computer'},
+   {id :2 , name : 'Mathematics'}
+ ];
+
+ const subject =subjects.find(subject=> subject.name ==='Computer');
+
+ console.log(subject);
