@@ -428,3 +428,31 @@ console.log(multiline);
  const subject =subjects.find(subject=> subject.name ==='Computer');
 
  console.log(subject);
+
+ //removing elements
+ const nu = [1,2,3,4,5]
+
+ //end
+ const la = nu.pop()
+
+ //beginning
+ const be = nu.shift()
+
+ //middle
+ const mi = nu.splice(2,1)
+
+ //Emptying an array
+ let arra = [1,2,3,4,5]
+ let anot = arra
+
+ //method 1
+//  arra =[]
+
+ //method 2
+ arra.length=0
+
+ //method 3
+//  arra.splice(0,arra.length)
+
+ console.log(arra);
+ console.log(anot);
