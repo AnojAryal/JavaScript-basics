@@ -446,13 +446,23 @@ console.log(multiline);
  let anot = arra
 
  //method 1
-//  arra =[]
+ //  arra =[]
 
  //method 2
  arra.length=0
 
  //method 3
-//  arra.splice(0,arra.length)
+ //  arra.splice(0,arra.length)
 
  console.log(arra);
  console.log(anot);
+
+ //combining and slicing arrays
+ const fi = [1,2,3,4,5]
+ const se = [6,7,8,9]
+
+ const combined = fi.concat(se)
+ const slice = combined.slice(0,5 )
+
+ console.log(combined);
+ console.log(slice);
