@@ -466,3 +466,35 @@ console.log(multiline);
 
  console.log(combined);
  console.log(slice);
+
+ //spread operator
+ const arr1 = [1, 2, 3];
+ const arr2 = [4, 5, 6];
+
+ const combinedArray = [...arr1, ...arr2]; 
+
+ console.log(combinedArray);
+
+ //iterating an array
+ const iterates = [1,2,3,4,5]
+
+ //for of
+ for (let iterate of iterates)
+   console.log(iterate);
+  
+ //for each
+ iterates.forEach(numb =>
+   console.log(numb)
+ );
+
+ //joining arrays
+ const numberss = [1, 2, 3, 4, 5];
+ const joinedString = numberss.join(" - ");
+ console.log(joinedString);
+
+
+ const sentence = "Hello, my name is FraNzY";
+ const wordsArray = sentence.split(" ");
+ console.log(wordsArray);
+
+ console.log(wordsArray.join('-'));
