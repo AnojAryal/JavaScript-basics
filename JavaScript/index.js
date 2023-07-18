@@ -498,3 +498,66 @@ console.log(multiline);
  console.log(wordsArray);
 
  console.log(wordsArray.join('-'));
+
+ //sorting arrays
+ const sorts = [1,5,2,4,9,7,8,3,6]
+ console.log(sorts.sort());
+
+ console.log(sorts.reverse());
+
+
+ const cours = [
+   {id : 1 ,name : 'Node.js'},
+   {id : 2 ,name : 'javascript'}
+ ]
+
+ cours.sort(function(a,b){
+
+   const NameA = a.name.toLowerCase();
+   const NameB = b.name.toLowerCase();
+
+   if (NameA < NameB) return -1
+   if (NameA > NameB) return 1
+   else return 0 ;
+ })
+ console.log(cours);
+
+
+ //testing elements of an array
+ const numbe = [1,2,-2,3,4,5]
+
+ //every method
+ const allPositive = numbe.every(function(value){
+   return value >=1
+ });
+ console.log(allPositive);
+
+ //some method
+ const atLeastOnePositive = numbe.some(function(value){
+   return value>=1
+ });
+ console.log(atLeastOnePositive);
+
+ //filtering an array
+ const filternum = [1,2,3,-3,-1,0,4,5]
+
+ const filtered = filternum.filter(n => n>=1)
+
+ console.log(filtered);
+
+ //mapping an array
+ const numberr = [1,2,3,-3,0,4]
+
+ const items = numberr   //chaining
+ .filter(n => n>=1)
+ .map(n =>({value : n}) );
+
+ console.log(items);
+
+ //reducing an array
+ const ser = [1,-1,2,3]
+
+ const sum = ser.reduce(
+   (accumulator ,currentValue) => accumulator + currentValue);
+
+ console.log(sum);
