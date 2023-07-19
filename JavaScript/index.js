@@ -561,3 +561,60 @@ console.log(multiline);
    (accumulator ,currentValue) => accumulator + currentValue);
 
  console.log(sum);
+
+
+ //Functions
+
+ //function decleration
+
+ walk(); //hoisting ---->process of moving function decleration to the 
+ //top of the file . done automatically by javascript engine
+
+ function walk(){
+   console.log('walk');
+ }
+
+ //function expression
+ let run = function(){
+   console.log('run');
+ }
+ run();
+
+//Arguments
+function summ(){
+   total = 0;
+   for (let value of arguments)
+   total += value
+   return total
+}
+console.log(summ(1,2,3,4,5));
+
+//rest operator
+function rest(discount,...prices){
+   const total = prices.reduce((a,b)=>a+ b);
+   return total * (1-discount)
+}
+console.log(rest(0.1,20,30));
+
+//default parameters
+function interest(principal,rate =5,years = 2){
+   return principal*rate/100*years;
+}
+console.log(interest(10000));
+
+//getters and setters
+const identity = {
+   firstname : 'Anoj',
+   lastname : 'Aryal',
+   get fullname() {
+     return `${identity.firstname} ${identity.lastname}`
+   },
+   set fullname(value){
+      const parts = value.split(' ');
+      this.firstname = parts[0];
+      this.lastname = parts[1];
+   }
+};
+identity.fullname = 'Sujta Shakya';
+
+console.log(identity);
