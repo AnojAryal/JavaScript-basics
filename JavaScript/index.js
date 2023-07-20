@@ -618,3 +618,34 @@ const identity = {
 identity.fullname = 'Sujta Shakya';
 
 console.log(identity);
+
+  //Scope
+
+ //local and global scope 
+
+ const col = 'haha'; // Global scope
+
+ function hi() {
+   const message1 = 'hi';
+ }
+ 
+ function bye() {
+   const message1 = 'bye';
+   console.log(col); // Accessing the global variable 'colors'
+ }
+ 
+ console.log(col);
+ 
+ //try and catch
+ function divide(a, b) {
+   if (b === 0) {
+     throw new Error("Cannot divide by zero!");
+   }
+   return a / b;
+ }
+ 
+ try {
+   const result = divide(10, 0);
+ } catch (error) {
+   console.log("An error occurred:", error.message);
+ } 
