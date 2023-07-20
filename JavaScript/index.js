@@ -649,3 +649,54 @@ console.log(identity);
  } catch (error) {
    console.log("An error occurred:", error.message);
  } 
+
+ //let vs var 
+
+ function exampleFunction() {
+   if (true) {
+     let x = 10; // Block-scoped variable
+     var y = 20; // Function-scoped variable
+     console.log(x); 
+   }
+   console.log(y);
+ 
+   console.log(a);
+   var a = 5;
+   let b = 10;
+   console.log(a); 
+   b = 15; 
+   console.log(b); 
+ }
+ 
+ exampleFunction();
+
+ //this keyword
+ 
+ //method -->object
+ //function --> global(window ,global)
+ const video = {
+   title: 'a',
+   tags: ['a', 'b', 'c'],
+   showTags() {
+     this.tags.forEach((tag) => {
+       console.log(this.title, tag);
+     });
+   },
+ };
+ 
+ video.showTags();
+ 
+
+ function Video(title){
+   this.title =title
+   console.log(this);
+   // 'this' refers to the newly created object when 'Video' constructor is invoked with 'new'
+ }
+const v = new Video('a'); //{}
+
+//changing this
+function playVideo(){
+   console.log(this);
+}
+playVideo.call({name : 'Anoj'});
+playVideo.bind({name : 'Anoj'})();
