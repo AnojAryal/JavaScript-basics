@@ -698,5 +698,5 @@ const v = new Video('a'); //{}
 function playVideo(){
    console.log(this);
 }
-playVideo.call({name : 'Anoj'});
-playVideo.bind({name : 'Anoj'})();
+playVideo.call({name : 'FraNzY'});
+playVideo.bind({name : 'FraNzY'})();
