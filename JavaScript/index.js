@@ -700,3 +700,32 @@ function playVideo(){
 }
 playVideo.call({name : 'FraNzY'});
 playVideo.bind({name : 'FraNzY'})();
+
+//loop practice
+
+// Step 1
+console.log("Numbers from 1 to 10:");
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// Step 2
+console.log("\nEven numbers from 2 to 20:");
+for (let i = 2; i <= 20; i += 2) {
+  console.log(i);
+}
+
+// Step 3
+function factorial(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  }
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+
+const number = 5;
+console.log("\nFactorial of", number, "is", factorial(number));
