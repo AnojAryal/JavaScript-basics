@@ -728,4 +728,9 @@ function factorial(n) {
 }
 
 const number = 5;
-console.log("\nFactorial of", number, "is", factorial(number));
+console.log("\nFactorial of", number, "is", factorial(number))
+
+//for loop
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
