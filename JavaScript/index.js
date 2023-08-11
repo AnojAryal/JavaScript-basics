@@ -734,3 +734,20 @@ console.log("\nFactorial of", number, "is", factorial(number))
 for (let i = 1; i <= 10; i++) {
   console.log(i);
 }
+
+//fibonacci series
+function fibonacci(n) {
+  let fibSeries = [0, 1];
+
+  for (let i = 2; i < n; i++) {
+    fibSeries[i] = fibSeries[i - 1] + fibSeries[i - 2];
+  }
+
+  return fibSeries;
+}
+
+const n = 10;
+const fibNumbers = fibonacci(n);
+
+console.log(`Fibonacci series of ${n} numbers:`);
+console.log(fibNumbers.join(", "));
