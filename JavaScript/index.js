@@ -701,6 +701,10 @@ function playVideo(){
 playVideo.call({name : 'FraNzY'});
 playVideo.bind({name : 'FraNzY'})();
 
+
+//programming practice
+
+
 //loop practice
 
 // Step 1
@@ -751,3 +755,15 @@ const fibNumbers = fibonacci(n);
 
 console.log(`Fibonacci series of ${n} numbers:`);
 console.log(fibNumbers.join(", "));
+
+//to print reverse
+function printReverse(inputString) {
+  var reversedString = "";
+  for (var i = inputString.length - 1; i >= 0; i--) {
+    reversedString += inputString[i];
+  }
+  console.log(reversedString);
+}
+
+var input = "Hello, world!";
+printReverse(input);
