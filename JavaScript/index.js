@@ -767,3 +767,17 @@ function printReverse(inputString) {
 
 var input = "Hello, world!";
 printReverse(input);
+
+//to print pallindrome
+function isPalindrome(num) {
+  const numStr = num.toString();
+  const reversedStr = numStr.split('').reverse().join('');
+  return numStr === reversedStr;
+}
+
+const inputNumber = 12321;
+if (isPalindrome(inputNumber)) {
+  console.log(`${inputNumber} is a palindrome.`);
+} else {
+  console.log(`${inputNumber} is not a palindrome.`);
+}
