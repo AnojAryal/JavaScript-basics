@@ -781,3 +781,18 @@ if (isPalindrome(inputNumber)) {
 } else {
   console.log(`${inputNumber} is not a palindrome.`);
 }
+
+//get day of week
+function getDayOfWeek(year, month, day) {
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const date = new Date(year, month - 1, day);
+  const dayOfWeekIndex = date.getDay();
+  return daysOfWeek[dayOfWeekIndex];
+}
+
+const year1 = 2023;
+const month1 = 8;
+const day1 = 14;
+
+const dayOfWeek = getDayOfWeek(year1, month1, day1);
+console.log(`The day of the week for ${month1}/${day1}/${year1} is ${dayOfWeek}.`);
