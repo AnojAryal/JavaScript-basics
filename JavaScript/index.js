@@ -792,7 +792,7 @@ function getDayOfWeek(year, month, day) {
 
 const year1 = 2023;
 const month1 = 8;
-const day1 = 14;
+const day1 = 15;
 
 const dayOfWeek = getDayOfWeek(year1, month1, day1);
 console.log(`The day of the week for ${month1}/${day1}/${year1} is ${dayOfWeek}.`);
