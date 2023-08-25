@@ -5,7 +5,7 @@ const value = 6 ; // constants
 
 //primitive types
 
-let firstName = 'Anoj'; //string literal
+let firstName = 'FraNzY'; //string literal
 let age = 20; //number literal
 let isApproved = false ; //boolean literal
 let lastName = undefined ;
