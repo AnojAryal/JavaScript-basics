@@ -796,3 +796,8 @@ const day1 = 15;
 
 const dayOfWeek = getDayOfWeek(year1, month1, day1);
 console.log(`The day of the week for ${month1}/${day1}/${year1} is ${dayOfWeek}.`);
+
+//print sum of 2 numbers
+const fir = 12
+const sec = 18
+console.log("the sum of 2 numbers is :",fir+sec);
