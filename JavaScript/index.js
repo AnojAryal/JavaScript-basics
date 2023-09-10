@@ -493,7 +493,7 @@ console.log(multiline);
  console.log(joinedString);
 
 
- const sentence = "Hello, my name is FraNzY";
+ const sentence = "Hello, my name is Asmi";
  const wordsArray = sentence.split(" ");
  console.log(wordsArray);
 
@@ -604,7 +604,7 @@ console.log(interest(10000));
 
 //getters and setters
 const identity = {
-   firstname : 'Anoj',
+   firstname : 'Asmita',
    lastname : 'Aryal',
    get fullname() {
      return `${identity.firstname} ${identity.lastname}`
