@@ -805,8 +805,7 @@ console.log("the sum of 2 numbers is :",fir+sec);
 
 // program to check if a number is prime or not
 
-// take input from the user
-const numberp = parseInt(prompt("Enter a positive number: "));
+const numberp = 23
 let isPrime = true;
 
 // check if number is equal to 1
